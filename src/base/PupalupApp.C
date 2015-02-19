@@ -28,6 +28,7 @@ PupalupApp::~PupalupApp()
 {
 }
 
+extern "C" void PupalupApp__registerApps() { PupalupApp::registerApps(); }
 void
 PupalupApp::registerApps()
 {
