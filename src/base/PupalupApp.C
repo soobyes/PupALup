@@ -10,10 +10,9 @@ InputParameters validParams<PupalupApp>()
   return params;
 }
 
-PupalupApp::PupalupApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+PupalupApp::PupalupApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);

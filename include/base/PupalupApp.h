@@ -11,7 +11,7 @@ InputParameters validParams<PupalupApp>();
 class PupalupApp : public MooseApp
 {
 public:
-  PupalupApp(const std::string & name, InputParameters parameters);
+  PupalupApp(InputParameters parameters);
   virtual ~PupalupApp();
 
   static void registerApps();
